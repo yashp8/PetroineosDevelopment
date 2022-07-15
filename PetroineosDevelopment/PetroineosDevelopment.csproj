@@ -9,5 +9,17 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="CsvHelper" Version="28.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="CsvHelper" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="PowerService" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PowerService">
+      <HintPath>..\..\..\Downloads\PowerService.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
